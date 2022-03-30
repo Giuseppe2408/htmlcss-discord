@@ -3,13 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* header */
 header {
-    background-color: rgb(20, 78, 236);
+    background-color: #255ee9;
   
 }
 
-header nav {
+nav {
     height: 100px;
     line-height: 100px;
     vertical-align: middle;
@@ -33,22 +33,25 @@ header nav {
 }
 
 .third-block {
-    margin-left: 12%;
+    margin-left: 13%;
     display: inline-block;
     width: 10%;
 }
 
-.container ul {
+header .container ul {
     width: 50%;
     display: inline-block;
     margin: 0 auto;
 }
 
-ul li{
+header ul li{
     margin-right: 5%;
     display: inline-block;     
-    list-style: none;
     font-size: 1.5vw;
+}
+
+li {
+    list-style: none;
 }
 
 a {   
@@ -60,7 +63,7 @@ a {
     padding: 30px;
     border-radius: 10px;
     background-color: white;
-    margin-left: 4%;
+    margin-left: 1%;
 }
 
 .text {
@@ -68,7 +71,7 @@ a {
     font-size: 20px;
     border-radius: 20px;
 }
-
+/* hero */
 #hero {
     width: 100%;
     background-image: url(../img/jumbo.png);
@@ -92,7 +95,7 @@ h1 {
 }
 
 .central-text p {
-    margin: 30px 0;
+    margin: 60px 0;
     color: white;
     font-size: 20px;
 }
@@ -100,10 +103,12 @@ h1 {
 .fa-download {
     color: black;
 }
+/* layout */
 
 .row {
     width: 80%;
-    margin: 100px auto;
+    margin: 0 auto;
+    padding: 100px;
 }
 
 .row::after {
@@ -118,14 +123,12 @@ h1 {
     width: 30%;
 }
 
-#float-left {
-    float: left;
+.left {
     width: 50%;
     font-size: 30px;
 }
 
-#float-right {
-    float: left;
+.right {
     width: 30%;
 }
 
@@ -136,5 +139,77 @@ h1 {
 }
 
 .background {
-    background-color: grey;
+    background-color: lightgrey;
+    
+}
+/* footer */
+.last-text {
+    font-size: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.last-text h2 {
+    font-size: 50px;
+}
+
+.last-img {
+    width: 100%;
+    text-align: center;
+}
+
+.stars {
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.row > a {
+    width: 30%;
+    margin: 30px auto;
+    display: block;
+    text-align: center;
+    background-color: #7b9ffa;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+/* footer */
+footer {
+    background-color: #23272a;
+    padding: 100px;
+}
+
+.large-col {
+    width: 20%;
+    line-height: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    color: #6183db;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.float {
+    float: left;
+}
+
+.col {
+    width: 10%;
+    margin: 0 5%;
+}
+
+.col li {
+    margin: 20px auto;
+    font-size: large;
 }
